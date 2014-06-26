@@ -108,7 +108,7 @@ out:
 
 static void kosagi_initiate_transfer(struct kosagi_fpga *fpga)
 {
-	pr_err("Initiating transfer\n");
+	//pr_err("Initiating transfer\n");
 	/* Set burst mode priority */
 	fpga->fpga_ctrl[FPGA_W_DDR3_P3_CMD] |= 0x8000;
 
