@@ -4,7 +4,7 @@ PWD := $(shell pwd)
 SYM=$(PWD)
 
 all:
-	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) modules
+	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) M=$(PWD) modules
 
 clean:
-	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) clean
+	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) M=$(PWD) clean
